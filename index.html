@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahim's Persona Blog Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main_header">
+        <div class="d-flex justify-content-center align-items-center flex-column py-5">
+            <h1 class="Main_heading">FAHIM AL HASSAN</h1>
+            <p class="Main_heading__pera">Welcome to my <span>world of Blog</span></p>
+        </div>
+        <!-- the main images  -->
+        <div class="main_header__div d-flex align-items-start justify-content-center pl-5
+        flex-column shadow">
+            <p>Fahim Al Hassan</p>
+            <h2 class="animateWord">
+                <span>He is</span>
+                <div>
+                    <ul class="flip">
+                        <li>a Programmer</li>
+                        <li>a Digital Marketer</li>
+                        <li> a Freelancer</li>
+                        <li>Awesome</li>
+                    </ul>
+                </div>
+            </h2>
+            <button class="text-uppercase">Follow</button>
+        </div>
+    </header>
+
+    <!-- two sided div start  -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- To get the left and right site space  -->
+            <div class="col-xl-10 col-lg-10 col-md-11 mx-auto my-5">
+                <div class="row gx-5 mx-sm-auto">
+                    <!-- to get the left side div space  -->
+                    <div class="col-lg-8 col-md-11 col-11 mx-auto">
+                        <div class="row gy-5">
+                            <!-- our first post code  -->
+                            <div class="col-12 card p-4 shadow blog_left__div">
+                                <div class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5">
+                                    <h1 class="Main_heading">BEST LAPTOP IN 2021</h1>
+
+                                    <p class="blog_title"> <span class="font-weight-bold">Title description,</span> April 19, 2021</p>
+                                </div>
+                                <figure class="right_side_img mb-5">
+                                    <img src="images/laptop-1.jpg" alt=" Photo " class="img-fluid shadow ">
+                                </figure>
+                                <p><span class="font-weight-bold">
+                                    MACBOOK PRO 13 (LATE 2020)
+                                </span> If you’re looking to buy an M1 MacBook for heavier workloads, you’ll want to look at the late-2020 MacBook Pro. It starts at $1,299, which is $300 more than the late-2020 MacBook Air.
+                                </p>
+                                <p>
+                                    The MacBook Pro has a slightly different design and look than the Air, as well as a few additional features like the Touch Bar. But the two have the same processor. The main difference is that the Pro includes a fan (the Air is fanless), which means it
+                                    can sustain heavy workloads for a longer period of time without needing to throttle its performance. But you won’t notice much of a performance difference between the two MacBooks unless you’re routinely pushing heavy
+                                    tasks for long periods of time.
+                                </p>
+                                <div class="d-flex justify-content-between left_div_btns">
+                                    <div>
+                                        <button class="left_div_like" id="Like_btn">
+                                            <i class="fas fa-thumbs-up"></i> Like
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button onclick="toggle()" class="right_div_reply">
+                                         Replies <badge class="bg-white text-dark p-2">1</badge>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="replies" id="test">
+                                    <div class="d-flex justify-content-start flex-row align-self-center card reply_card py-3">
+                                        <div class="reply_img mx-2 align-items-center">
+                                            <img src="images/119885587_357257098777188_8177272142206810799_n.jpg" />
+                                        </div>
+                                        <div class="reply_text_left">
+                                            <p class="blog_title">
+                                                <span class="font-weight-bold"> Fahim Al Hassan, </span> April 20,2021
+                                            </p>
+                                            <p>
+                                                Awesome bro, I love your content
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- our second div  -->
+                            <div class="col-12 card p-4 shadow blog_left__div">
+                                <div class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5">
+                                    <h1 class="Main_heading">BEST Car IN 2021</h1>
+
+                                    <p class="blog_title"> <span class="font-weight-bold">Title description,</span> April 19, 2021</p>
+                                </div>
+                                <figure class="right_side_img mb-5">
+                                    <img src="images/car.jpg" alt=" Photo " class="img-fluid shadow ">
+                                </figure>
+                                <p><span class="font-weight-bold">
+                                    Tesla Model S
+                                </span> Back to top VIDEOS FROM AUTOCAR New Bentley Flying Spur V8 review | 2021's best luxury limo? | Autocar Never has an electric car come along and done onboard luxury better than Audi’s first stab at the zero-emissions
+                                    template: the E-tron Quattro. This car combines four-wheel drive and a commanding outright performance level with SUV-level space, convenience and usability and with Audi-brand desirability. But what really makes it
+                                    stand out is how superbly hushed, comfortable and refined it is. When we road tested one, our decibel placed its cabin noise level closer, at a 70mph cruise, to that of a Rolls-Royce Phantom than a Tesla Model X. Audi-brand
+
+                                </p>
+                                <p>
+                                    modern luxury comes with state-of-the-art onboard technology too, of course, while the potential for 150kW public rapid charging, combined with an everyday range of between 200- and 250 miles on a charge, also makes the E-tron a more usable electric car
+                                    than some of its ilk. Right now, there is no more luxurious electric car in the world than this one. Save money with new E-tron deals from What Car? 4. Tesla Model S The first bespoke creation from electric car pioneer
+                                    Elon Musk’s firm, the Model S is the machine that brought credibility, luxury, pace and useful range to the electric car market. With lesser-capacity derivatives now discontinued, there are effectively only two Model
+                                    Ss to choose from, both using a 100kWh battery pack - and the 'long range' version getting a claimed 379-mile WLTP-certified range that Tesla claims makes it the longest-legged EV in production. You’ll need to drive
+                                    the car pretty conservatively to reproduce that range figure in real-world use, but even getting within 80 per cent of it would make this a singularly usable electric car for a great many.
+                                </p>
+                                <div class="d-flex justify-content-between left_div_btns">
+                                    <div>
+                                        <button class="left_div_like" id="Like_btn">
+                                            <i class="fas fa-thumbs-up"></i> Like
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button onclick="Toggle()" class="right_div_reply">
+                                         Replies <badge class="bg-white text-dark p-2">2</badge>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="replies" id="test_1">
+                                    <div class="d-flex justify-content-start flex-row align-self-center card reply_card py-3">
+                                        <div class="reply_img mx-2 align-items-center">
+                                            <img src="images/mark.jpeg" />
+                                        </div>
+                                        <div class="reply_text_left">
+                                            <p class="blog_title">
+                                                <span class="font-weight-bold"> Mark Zakarburg, </span> April 20,2021
+                                            </p>
+                                            <p>
+                                                This is really helpful content, keep it up.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="replies" id="test_2">
+                                    <div class="d-flex justify-content-start flex-row align-self-center card reply_card py-3">
+                                        <div class="reply_img mx-2 align-items-center">
+                                            <img src="images/119885587_357257098777188_8177272142206810799_n.jpg" />
+                                        </div>
+                                        <div class="reply_text_left">
+                                            <p class="blog_title">
+                                                <span class="font-weight-bold"> Fahim Al Hassan, </span> April 20,2021
+                                            </p>
+                                            <p>
+                                                Awesome bro, I love your content
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- our third div  -->
+                            <div class="col-12 card p-4 shadow blog_left__div">
+                                <div class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5">
+                                    <h1 class="Main_heading">BEST Mobile IN 2016</h1>
+
+                                    <p class="blog_title"> <span class="font-weight-bold">Title description,</span> April 19, 2021</p>
+                                </div>
+                                <figure class="right_side_img mb-5">
+                                    <img src="images/mobile.jpg" alt=" Photo " class="img-fluid shadow ">
+                                </figure>
+                                <p><span class="font-weight-bold">
+                                    iPhone 7
+                                </span>The iPhone 7 and iPhone 7 Plus, first released in 2016, are no longer flagship Apple devices, having been replaced by the iPhone 8, iPhone XS, XS Max, XR, iPhone 11, iPhone 11 Pro, and iPhone 11 Pro Max. Apple stopped
+                                    selling the iPhone 7 on September 10, 2019, following the debut of the new 2019 iPhone lineup.
+                                </p>
+                                <p>
+                                    Priced starting at $449 for a 64GB iPhone 7 or $569 for an iPhone 7 Plus, the two older iPhones are more affordable than the $599 iPhone 8, the $699 iPhone 8 Plus, $749 iPhone XR, the $999 iPhone XS, and the $1099 iPhone XS Max.
+                                </p>
+                                <div class="d-flex justify-content-between left_div_btns">
+                                    <div>
+                                        <button class="left_div_like" id="Like_btn">
+                                            <i class="fas fa-thumbs-up"></i> Like
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button onclick="reply()" class="right_div_reply">
+                                         Replies <badge class="bg-white text-dark p-2">1</badge>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="replies" id="test_3">
+                                    <div class="d-flex justify-content-start flex-row align-self-center card reply_card py-3">
+                                        <div class="reply_img mx-2 align-items-center">
+                                            <img src="images/119885587_357257098777188_8177272142206810799_n.jpg" />
+                                        </div>
+                                        <div class="reply_text_left">
+                                            <p class="blog_title">
+                                                <span class="font-weight-bold"> Fahim Al Hassan, </span> April 20,2021
+                                            </p>
+                                            <p>
+                                                Awesome bro, I love your content
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- to get the right side div space  -->
+
+                    <div class="col-lg-3 col-md-7 col-11 justify-content-end m-lg-0 m-auto">
+                        <div class="row ty-5 left_div_blog">
+                            <!-- About me part  -->
+                            <div class="col-12 about_mee_div shadow">
+                                <p class="head_right">MD Abdullah</p>
+                                <p>I'm a Digital Marketer, Expert on social media marketing especially Facebook Marketing, link building, SEO, and YouTube marketing. Besides this, I'm a Professional Front End Web Developer, In this field, I'm an expert in
+                                    HTML, CSS, SASS, JAVASCRIPT, and Jquery.</p>
+                            </div>
+                            <div class="populer_post">
+                                <div class="right_div_title p-4 pl-2">
+                                    <h2>Populer Posts</h2>
+                                </div>
+                                <div class="right_sub_div shadow">
+                                    <div class="row">
+                                        <div class="col-3 populer_post_img1 py-2 pl-2">
+                                            <img src="images/mark.jpeg" class="imgs" alt="">
+                                        </div>
+                                        <div class="col-9">
+                                            <h3> Mark Zakarburg</h3>
+                                            <p>CEO Facebook</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-3 populer_post_img1 py-2 pl-2">
+                                            <img class="imgs" src="images/Bil gatse.jpeg" alt="">
+                                        </div>
+                                        <div class="col-9">
+                                            <h3>Bill Gates</h3>
+                                            <p>CEO Microsoft</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-3 populer_post_img1 py-2 pl-2">
+                                            <img src="images/amazon.jpeg" class="imgs" alt="">
+                                        </div>
+                                        <div class="col-9">
+                                            <h3>Jeff Bezos</h3>
+                                            <p>CEO Amazon</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-3 populer_post_img1 py-2 pl-2">
+                                            <img src="images/twitter.jpeg" class="imgs" alt="">
+                                        </div>
+                                        <div class="col-9">
+                                            <h3>Jack Dorsey</h3>
+                                            <p>CEO Twitter</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- advertisement  -->
+                            <div class="right_div_post">
+                                <div class="right_div_title py-4 pl-2">
+                                    <h2>Advertise</h2>
+                                </div>
+                                <div class="right_sub_div">
+                                    <div class="advertise_img bg-light shadow">
+                                        <p>Ads goes here</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- text  -->
+                            <div class="right_div_post">
+                                <div class="right_div_title py-4 pl-2">
+                                    <h2>Tags</h2>
+                                </div>
+                                <div class="tags_main right_sub_div">
+                                    <a href="#" class="badge shadow text-capitalize">HTML</a>
+                                    <a href="#" class="badge shadow text-capitalize">CSS</a>
+                                    <a href="#" class="badge shadow text-capitalize">Javascript</a>
+                                    <a href="#" class="badge shadow text-capitalize">Bootstrap</a>
+                                    <a href="#" class="badge shadow text-capitalize">JQuery</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- four Images  -->
+                        <div class="
+                        row">
+                            <h2 class="my-3">Images</h2>
+                            <img src="images/pexels-amine-m'siouri-3284167.jpg" alt="" class="left_images col-lg-6 col-md-6 col-12">
+                            <img src="images/pexels-billel-moula-540518.jpg" alt="" class="left_images col-lg-6 col-md-6 col-12">
+                            <img src="images/pexels-cliford-mervil-2469122.jpg" alt="" class="left_images col-lg-6 col-md-6 col-12">
+                            <img src="images/pexels-efdal-yildiz-917494.jpg" alt="" class="left_images col-lg-6 col-md-6 col-12">
+                        </div>
+
+                        <!-- social media icon  -->
+                        <div>
+                            <h2 class="text-bold my-2">Follow Me On Social Media</h2>
+                            <ul class="social_icon d-flex ">
+                                <li>
+                                    <a href="https://www.facebook.com/fahim.alhassan.96/"><i class="fab fa-facebook-square fa-3x"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/MdAbdul16530893"> <i class="fab fa-twitter-square fa-3x"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/fahimalhassan/"><i class="fab fa-instagram fa-3x"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/md-abdullah-1907b8173/"><i class="fab fa-linkedin fa-3x"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Bootstrap contact form only email & submit button  -->
+                        <h2 class="my-3 text-uppercase">Join With Me</h2>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput ">Enter Your Email</label>
+                        </div>
+                        <button type="button" class="btn btn-outline-secondary">Submit</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center p-5">
+        <h2> &copy; MD ABDULLAH</h2>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js " integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/ " crossorigin="anonymous "></script>
+    <script src="script.js "></script>
+</body>
+
+</html>

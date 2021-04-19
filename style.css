@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600&display=swap');
+:root {
+    --bg-size: 100% 100%;
+    --main-color: #fff;
+    --title: 'josefin sans', sans-serif;
+    --font-para: 'David Libre', serif;
+    --btn-color: #bbe1fa;
+    --btn-font-color: #000;
+    --btn-font: 1.5rem;
+    --eff: .3s all ease;
+}
+
+* {
+    font-family: var(--font-para);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+p,
+label,
+input::placeholder {
+    font-size: 1.9rem;
+    line-height: 170%;
+    color: #6c757d;
+}
+
+figure img,
+.fab,
+.fas {
+    transition: var(--eff);
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    background: hsl(84, 3%, 94%);
+}
+
+.reply_img img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.Main_heading {
+    font-family: var(--title);
+    font-weight: bold;
+    font-size: 5rem;
+    color: var(--btn-font-color);
+}
+
+.Main_heading__pera {
+    font-size: 2.2rem;
+}
+
+.main_header__div {
+    height: calc(100vh - 40vh);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0)), url(images/backgrount.jpg);
+    background-size: var(--bg-size);
+}
+
+.main_header__div p {
+    font-weight: bold;
+    font-size: 3.5rem;
+    font-family: var(--title);
+    color: var(--main-color);
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    padding-left: 4%;
+}
+
+.main_header__div h2 {
+    font-size: 6.5;
+    font-weight: bold;
+    font-family: var(--title);
+    color: var(--main-color);
+    position: relative;
+    padding-bottom: 2rem;
+    transition: var(--eff);
+    padding-left: 4%;
+}
+
+.main_header__div span {
+    font-family: var(--title);
+}
+
+.animateWord div {
+    overflow: hidden;
+    position: relative;
+    float: right;
+    height: 8rem;
+    padding-top: 1rem;
+    margin-top: -1rem;
+}
+
+.animateWord div li {
+    font-weight: bold;
+    padding-bottom: 0 1rem;
+    height: 4.5rem;
+    margin-bottom: 4.5rem;
+    display: block;
+    font-family: var(--title);
+}
+
+.flip {
+    -webkit-animation: flip4 10s cubic-bezier(0.23, 1, 0.23, 1.2) infinite;
+    animation: flip4 10s cubic-bezier(0.23, 1, 0.23, 1.2) infinite;
+}
+
+@-webkit-keyframes flip4 {
+    0% {
+        margin-top: 350px;
+    }
+    5% {
+        margin-top: -270px;
+    }
+    25% {
+        margin-top: -270px;
+    }
+    30% {
+        margin-top: -180px;
+    }
+    50% {
+        margin-top: -180px;
+    }
+    55% {
+        margin-top: 90px;
+    }
+    75% {
+        margin-top: -90px;
+    }
+    80% {
+        margin-top: 0px;
+    }
+    99.99% {
+        margin-top: 0px
+    }
+    100% {
+        margin-top: 270px;
+    }
+}
+
+@keyframes flip4 {
+    0% {
+        margin-top: -360px;
+    }
+    5% {
+        margin-top: -270px;
+    }
+    25% {
+        margin-top: -270px;
+    }
+    30% {
+        margin-top: -180px;
+    }
+    50% {
+        margin-top: -180px;
+    }
+    75% {
+        margin-top: -90px;
+    }
+    80% {
+        margin-top: 0px;
+    }
+    99.99% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: -270px;
+    }
+}
+
+.main_header__div button {
+    color: var(--btn-font-color);
+    border-width: 0;
+    font-size: var(--btn-font);
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+    font-family: var(--title);
+    outline: none;
+    border-radius: 5px;
+    margin-left: 4%;
+}
+
+.main_header__div button:hover {
+    background: transparent;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #fff;
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 3rem -1rem rgba(255, 255, 255, 0.7);
+}
+
+
+/* left side blog style start  */
+
+.blog_left__div h1 {
+    font-family: var(--title);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.blog_left__div .blog_title {
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+.blog_left__div .blog_title span {
+    color: #1b262c;
+}
+
+figure img:hover,
+.left_div_like:hover,
+.right_div_reply:hover,
+img.left_images {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 3rem -1rem rgba(255, 255, 255, 0.7);
+}
+
+.blog_left__div p span {
+    color: #1b262c;
+    font-weight: bold;
+}
+
+.left_div_btns {
+    margin-top: 3rem;
+    transition: var(--eff);
+}
+
+.left_div_like,
+.right_div_reply {
+    color: var(--btn-font-color);
+    font-size: var(--btn-font);
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+    font-family: var(--title);
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+.replies {
+    margin: 2rem 0;
+    padding-top: 1rem 0;
+    transition: var(--eff);
+    display: none;
+}
+
+.show {
+    margin: 20px 0px;
+    transition: var(--eff);
+    display: block;
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+p.head_right {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0px;
+    border-radius: 5px;
+}
+
+img.imgs {
+    width: 4.5rem;
+}
+
+.tags_main.right_sub_div {
+    width: 100%;
+    height: 110px;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+a.badge.shadow.text-capitalize {
+    color: #000;
+    font-size: 12px;
+    padding: 16px;
+    font-weight: bold;
+    margin: 2px;
+}
+
+.col-lg-6.col-md-6.col-12 h2 {
+    text-align: start;
+    margin: 15px 0px;
+}
+
+img.left_images {
+    width: 50%;
+    height: 125px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1rem 3rem -1rem rgba(255, 255, 255, 0.7);
+}
+
+.social_icon li {
+    list-style: none;
+    margin: 10px;
+    text-align: center;
+}
+
+input#floatingInput {
+    border-radius: 0.5rem;
+}
+
+button.btn.btn-outline-secondary {
+    width: 100px;
+    height: 32px;
+    border-radius: 0.5rem;
+    color: #000;
+    background: #bbe1fa;
+    font-size: 15px;
+    border: 1px solid #000;
+    transition: all var(--eff);
+}
+
+button.btn.btn-outline-secondary:hover {
+    background: transparent;
+    color: #000;
+    font-weight: bold;
+    border: 1px solid #000;
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 3rem -1rem rgba(255, 255, 255, 0.7);
+}
+
+footer {
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+}
